@@ -7,7 +7,11 @@
   <body>
 <header class="main-header">
 	<div class="container">
-        <img src="http://placehold.it/150x100" alt="логотип">
+        <div class="Logo">
+        <a href="ссылка на главную"> 
+        <img src="http://placehold.it/150x100">
+      </a>
+    </div>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -32,42 +36,69 @@
     </header>
 
 <main class="container">
-  <form action="#" method="post">
-    <h2>Стоимость:</h2>
-    <h2>Сетка:</h2>
+  <form action="#" method="post" oninput="min.value" oninput="max.value">
+    <div class="cost">
+    <p>Стоимость:</p>
+    <input type="range" id="cost" name="cost" min="0" max="15000" step="100">
+    <p>от</p>
+    <output name="min"></output>
+    <p>до</p>
+    <output name="max"></output>
+    </div>
+    <div class="grid">
+    <p>Сетка:</p>
     <label><input type="radio" name="grid" value="Adaptive">Адаптивная</label>
     <label><input type="radio" name="grid" value="Fixed">Фиксированная</label>
     <label><input type="radio" name="grid" value="Rubber">Резиновая</label>
-    <h2>Особенности:</h2>
+    </div>
+    <div class="features">
+    <p>Особенности:</p>
     <input type="checkbox" name="Slider" id="check1"><label for="check1">Слайдер</label>
     <input type="checkbox" name="Advantage-block" id="check2"><label for="check1">Блок преимуществ</label>
     <input type="checkbox" name="news" id="check3"><label for="check1">Новости</label>
     <input type="checkbox" name="gallery" id="check4"><label for="check1">Галерея</label>
     <input type="checkbox" name="basket" id="check5"><label for="check1">Корзина</label>
    <input type="submit" value="Показать">
+   </div>
   </form>
+  <div class="products">
   <div class="sorting">
     <p>Сортировать по:</p>
     <a href="#">По цене</a>
     <a href="#">По типу</a>
     <a href="#">По названию</a>
-  </div>
-    <article class="site ">
+    <div class="up">
+      <a href="#">
+      <img src="http://placehold.it/150x100">
+      </a>
+    </div>  
+    <div class="down">
+      <a href="#">
+      <img src="http://placehold.it/150x100">
+      </a>
+    </div>
+    <article class="site">
+      <a class="caption-link" href="#" data-title="Sedona" data-description="Информационный сайт для туристов" data-cost="9900руб.">
       <img src="http://placehold.it/150x100">
       </article>
-    <article class="site ">
+    <article class="site">
+      <a class="caption-link" href="#" data-title="Pink" data-description="Описание" data-cost="цена.">
       <img src="http://placehold.it/150x100">
       </article>
-    <article class="site ">
+    <article class="site">
+      <a class="caption-link" href="#" data-title="Borodinski" data-description="Описание" data-cost="цена.">
       <img src="http://placehold.it/150x100">
       </article>
-    <article class="site ">
+    <article class="site">
+      <a class="caption-link" href="#" data-title="Mishki" data-description="Описание" data-cost="цена.">
       <img src="http://placehold.it/150x100">
       </article>
-    <article class="site ">
+    <article class="site">
+      <a class="caption-link" href="#" data-title="A+" data-description="Описание" data-cost="цена.">
       <img src="http://placehold.it/150x100">
       </article>
-    <article class="site ">
+    <article class="site">
+      <a class="caption-link" href="#" data-title="Kvast" data-description="Описание" data-cost="цена.">
       <img src="http://placehold.it/150x100">
       </article>
   <ul class="pagination">
@@ -76,6 +107,8 @@
  <li><a href="#">3</a></li>
  </ul>
  <a class="btn" href="#">Следующая</a>
+</div>
+</div>
 </main>
 
     <footer class="main-footer">
