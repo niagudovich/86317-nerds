@@ -22,3 +22,84 @@ h2{
     color: #000000;
 	font-family: "Roboto";
 }
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+.container{
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+.main-navigation{
+    float: left;
+    width: 993px;
+
+}
+.block-basket{
+    float: right;
+    width: 200px;
+
+}
+.slider{
+    width: 1160px;
+    height: 536px;
+}
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  content: "";
+  position: absolute;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+.main-header::before {
+  content: ".main-header";
+}
